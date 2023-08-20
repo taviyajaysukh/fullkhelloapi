@@ -1,11 +1,9 @@
 const mongoose = require("mongoose");
-const periodSchema = new mongoose.Schema({
-	userMobile:Number,
-	minutes:Number,
-	seconds:Number,
+const manageperiodSchema = new mongoose.Schema({
+	id:Number,
 	period:Number,
     createddate:{ type: Date, default: Date.now },
 	updateddate:{ type: Date, default: Date.now },
 	status:Boolean,
 })
-module.exports = mongoose.model("periods",periodSchema);
+module.exports = mongoose.model("manageperiods",manageperiodSchema);
